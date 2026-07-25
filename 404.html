@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page not found — Ousley Utilities</title>
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#1B0D36" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B0D36'/%3E%3Cpath d='M18.2 4.5 8.6 18.4h5.8L13.2 27.5l9.8-14.2h-5.9z' fill='%23C8B4E2'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --plum: #1B0D36; --violet2: #7B55B2; --lavender: #C8B4E2; --sand: #D4A96A;
+  --ff-d: 'Fraunces', Georgia, serif; --ff-b: 'Figtree', sans-serif;
+}
+body {
+  min-height: 100vh; background: var(--plum); color: #fff;
+  font-family: var(--ff-b); font-weight: 300;
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  padding: 4rem; overflow: hidden; position: relative;
+}
+.arc {
+  position: absolute; top: -18vw; right: -16vw; width: 70vw; height: 70vw;
+  border-radius: 50%; border: 1px solid rgba(200,180,226,0.12); pointer-events: none;
+}
+.arc::before { content: ''; position: absolute; inset: 16%; border-radius: 50%; border: 1px solid rgba(200,180,226,0.07); }
+.inner { position: relative; max-width: 46rem; }
+.eyebrow { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sand); margin-bottom: 1.6rem; }
+h1 { font-family: var(--ff-d); font-size: clamp(2.6rem, 7vw, 5rem); font-weight: 300; line-height: 1.05; margin-bottom: 1.6rem; }
+h1 em { font-style: italic; color: var(--lavender); display: block; }
+p { font-size: 1.02rem; line-height: 1.8; color: rgba(255,255,255,0.55); max-width: 46ch; margin-bottom: 2.6rem; }
+.actions { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.7rem;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--plum); background: var(--lavender); padding: 0.85rem 1.8rem;
+  text-decoration: none; border-radius: 2px; transition: background 0.3s;
+}
+.btn:hover { background: var(--sand); }
+.btn-ghost {
+  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.3s;
+}
+.btn-ghost:hover { color: var(--lavender); }
+:focus-visible { outline: 2px solid var(--sand); outline-offset: 3px; }
+@media (max-width: 700px) { body { padding: 2rem 1.5rem; } .actions { gap: 1.4rem; } }
+</style>
+</head>
+<body>
+<div class="arc" aria-hidden="true"></div>
+<div class="inner">
+  <p class="eyebrow">Error 404</p>
+  <h1>This page isn't<br><em>connected.</em></h1>
+  <p>The page you're looking for doesn't exist or has moved. Everything we do — new connections, meter moves, supply upgrades and DNO liaison — is on the main site.</p>
+  <div class="actions">
+    <a href="/" class="btn">
+      Back to homepage
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 7.5h9M8 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <a href="mailto:hello@ousley.energy" class="btn-ghost">hello@ousley.energy</a>
+  </div>
+</div>
+</body>
+</html>
